@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parse Arguments handles empty list without fail 1`] = `
+Object {
+  "_": Array [],
+  "install": true,
+}
+`;
+
+exports[`Parse Arguments handles install flag 1`] = `
+Object {
+  "_": Array [
+    "cmd",
+  ],
+  "install": true,
+}
+`;
+
+exports[`Parse Arguments handles no-install flag 1`] = `
+Object {
+  "_": Array [
+    "cmd",
+  ],
+  "install": false,
+}
+`;
