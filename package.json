@@ -27,7 +27,8 @@
     "lib"
   ],
   "dependencies": {
-    "minimist": "1.2.0"
+    "minimist": "1.2.0",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",

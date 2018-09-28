@@ -12,7 +12,8 @@
 
 ```bash
 $ npm install --global go go-loader-gist
-$ go gist
+$ go gist <gist_hash>
+$ go gist <gist_hash>/<version_sha>
 ```
 
 ## Options
@@ -21,7 +22,7 @@ $ go gist
 $ go gist <source> <destination> [options]
 ```
 
-- `source` — valid source
+- `source` — gist hash and version optionally separated by slash
 - `destination` — folder path to put loaded files (destination folder will be created if it doesn't exist)
 - `options`:
   - `--no-install` — do not install boilerplate after loading
