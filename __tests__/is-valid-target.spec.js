@@ -66,10 +66,12 @@ describe('Is Valid Target', () => {
       .rejects.toThrow(`can not access '${path}' because of 'error'`)
   })
 
-  it('rejects if dir is not empty', () => {
+  it('resolves if dir is not empty', () => {
     mockStat.mockReturnValue(dirStat)
     mockDir.mockReturnValue(['file'])
-    return expect(isValidTarget(path))
-      .rejects.toThrow(`'${path}' is not empty`)
+    return isValidTarget(path)
+      .then((res) => {
+        expect(res).toBe(undefined)
+      })
   })
 })

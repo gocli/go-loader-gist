@@ -14,7 +14,12 @@
     "unit:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "unit:watch": "jest --coverage --watchAll"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocli/go-loader-gist.git"
+  },
   "keywords": [
+    "gist",
     "template",
     "generator",
     "scaffold",
@@ -26,6 +31,10 @@
   "files": [
     "lib"
   ],
+  "bugs": {
+    "url": "https://github.com/gocli/go-loader-gist/issues"
+  },
+  "homepage": "https://github.com/gocli/go-loader-gist#readme",
   "dependencies": {
     "minimist": "1.2.0",
     "mkdirp": "^0.5.1"
@@ -39,6 +48,7 @@
   },
   "standard": {
     "globals": [
+      "afterEach",
       "beforeEach",
       "describe",
       "expect",
